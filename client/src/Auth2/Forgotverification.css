@@ -1,20 +1,56 @@
+ .fgv-bg1{
+  background-image: url('https://s3-alpha-sig.figma.com/img/0b0d/7354/18892239591f7ff7d30eae83d691fae2?Expires=1702252800&Signature=eBL55hSN2SghABudycoLTHwrCaBcYH2uj0VP7NSkXb~NGImxMpZ4KgbksshEPToK0uE5b0ipRyIRC2R8vtqfEqEvxtbrwhw9DizoXPaXftQTwWlfbo~DKcV6sQQdqPP0fvnlxi0aFPF77EJMBFi9LEdObGuKzWVe3DQPUNnC~9NG59EiNNEyb56bp~-JNBAQXxeqUP2hZh2nTiTYpxExvUXIu8HhFl29SATtpMOWhkPH0cyHwTkNQxXx7-NnW~Pc9tfKsa2IOlkZ8V58PXRQX72odCwsbR~-yrd9ROZiH6WEAz3T1CTf3~JBh7VKs2Osz-4BIt-2zeXA3hjQRoHzCQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+   height: 52.8vh;
+   width: 39%;
+  /* width: 100%;  */
+  /* margin-left: 50%; */
+  border-radius: 15px;
+  /* margin-left: 20%; */
+  padding: 2.5rem;
+
+  
+} 
+
+
+
+
 .fgv-bgcontainer {
-  background-image: url(forgot-back.png);
+  /* background-image: url(forgot-back.png); */
+  
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* margin: auto;
+  margin-bottom: -8.8%;
+  margin-top: -8.8%; */
+  /* border-radius: 20px; */
+  /* margin: auto; */
+ margin: auto;
+ margin-top: -1.5%;
+  
 }
 
 .fgv-cardcontainer {
-  padding: 30px;
-  margin: 20px;
-  height: 60vh;
+  padding: 2rem;
+  /* margin: 20px; */
+  height:55vh;
+  width: 60%;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 37%;
+ position: relative;
+ top: -10.2%;
+  /* margin-top: 2.5%; */
+  /* margin-bottom: 7%; */
+}
+
+
+.fgvpara{
+  color: rgb(142, 142, 142);
 }
 
 .fgv-field {
@@ -24,12 +60,36 @@
 }
 
 .fgv-input-field input {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   border: 1px solid #3d48e3;
-  border-radius: 5px;
+  border-radius: 0px;
   transition: border-color 0.3s ease-in-out;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  
 }
+.fgv-input-field{
+  display: flex;
+  align-items: center;
+}
+
+ .icon1{
+  display: inline-block;
+  cursor: pointer;               
+  margin-left: 83%;               
+  margin-top: -20px;               
+}
+
+.input1{
+  padding: 1em;
+  margin-right: 1%;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  border: 1px solid rgb(10, 9, 9);
+} 
 
 .fgv-input-field input:focus {
   border-color: #8e44ad;
@@ -37,8 +97,8 @@
 
 .fgv-button-field button {
   width: 100%;
-  padding: 10px;
-  background-color: #3d48e3;
+  padding: 10px 15px;
+  background-color: #111133;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -56,35 +116,48 @@
 
 /* Styles for smaller screens */
 @media (max-width: 768px) {
-  .fgv-bgcontainer {
-    flex-direction: column;
+  .fgv-bg1 {
+    width: 40%; /* Adjust width for better fit on smaller screens */
+    margin: auto;
   }
 
   .fgv-cardcontainer {
-    height: auto;
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 0; /* Adjust top margin for better spacing */
+  }
+
+  .fgvpara {
+    font-size: 14px; /* Adjust font size for better readability */
   }
 
   .fgv-input-field input {
-    width: 100%;
+    width: 70%;
+    margin-right: 0; /* Remove margin for better fit */
   }
 
   .fgv-button-field button {
     width: 100%;
+    padding: 8px 15px; /* Adjust button padding */
+  }
+
+  .icon1 {
+    margin-left: 80%; /* Adjust margin for icon position */
   }
 }
 
 /* Styles for even smaller screens (e.g., smartphones) */
 @media (max-width: 480px) {
+  .fgv-bg1 {
+    width: 70%; /* Further adjust width for smaller screens */
+  }
+
   .fgv-cardcontainer {
-    padding: 20px;
+    padding: 15px; /* Adjust padding for better spacing */
   }
 
   .fgvheadername {
-    font-size: 24px;
-  }
-
-  .fgvpara {
-    margin-bottom: 30px;
+    font-size: 20px; /* Further reduce font size for smaller screens */
   }
 
   .fgv-input-field input {
@@ -92,6 +165,7 @@
   }
 
   .fgv-button-field button {
-    padding: 8px;
+    padding: 6px 12px; /* Adjust button padding */
   }
 }
+
